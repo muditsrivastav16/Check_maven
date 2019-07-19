@@ -4,6 +4,7 @@ pipeline {
     stage ('check maven') {
       steps {
         echo 'checking maven'
+        maven('verify')
       }
     }
   }
